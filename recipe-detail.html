@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For star rating -->
+</head>
+<body class="bg-gray-50">
+
+<!-- Container 1 -->
+<div class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-md flex flex-wrap">
+    <!-- Left Bar -->
+    <div class="w-full md:w-1/2 p-4">
+        <img src="./images/ganache.jpg" alt="Ganache Image"  class="w-full rounded-lg " data-toggle="tooltip" data-placement="top" title="Vegan Chocolate Ganache Tart">
+    </div>
+    <!-- Right Bar -->
+    <div class="w-full md:w-1/2 p-4">
+        <h1 class="text-3xl font-bold mb-2">Vegan Chocolate Ganache Tart</h1>
+        <p class="text-sm mb-4 text-justify">Vegan Chocolate Ganache Tart, made with healthier gluten-free and vegan ingredients, and tastes ultra-decadent and delicious.he vegan chocolate ganache crust has no gluten and there is no egg or dairy in the chocolate filling. Finish with a crown of pistachios and fresh fig for an elegant vegan dessert. Pistachios give the crust a nice subtle flavor and look beautiful. Don’t have pistachios? You could use another nut if you like – pecans and hazelnuts work really well. And if you have never made pastry, this vegan tart is one of the best ways to start your pie adventures. There’s no rolling required for the crust, just press, and bake.
+
+            A tart pan with a removable bottom is really key for tarts made with crumb or shortbread style crusts. Being able to remove the sides makes it so much easier to slice the tart, and then remove each piece from the base.</p>
+        <!-- Boxes for servings, total mins, prep, and cook -->
+        <div class="flex flex-wrap justify-start mx-2.5 rounded-lg">
+            <div class="p-2 bg-green-200 bg-opacity-10 backdrop-blur-[20px] rounded-lg mr-2 mb-2">Servings: 6-8</div>
+            <div class="p-2 bg-green-200 bg-opacity-10 backdrop-blur-[20px] rounded-lg mr-2 mb-2">Total Mins: 45 min</div>
+            <div class="p-2 bg-green-200 bg-opacity-10 backdrop-blur-[20px] rounded-lg mr-2 mb-2">Prep: 15 min </div>
+            <div class="p-2 bg-green-200 bg-opacity-10 backdrop-blur-[20px] rounded-lg mr-2 mb-2">Cook: 30 min</div>
+        </div>
+        <script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+            
+            </script>
+          
+            <script>
+              $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+              });
+            </script>
+         </script>
+
+
+        <!-- Bigger Boxes for ingredients and free from ingredients -->
+        <div class="flex flex-wrap mt-2">
+            <div class="w-1/4 p-1 ">
+                <div class="py-1 px-2 bg-green-100 rounded-lg text-lg">
+                    Contains
+                    <img src="./images/containa ingredients.png" alt="contain-ingredients" class="mt-1 mx-auto" style="height: 100px; width: auto;">
+                </div>
+                
+            </div>
+            <div class="w-1/4 p-1">
+                <div class="py-1 px-2 bg-green-100 rounded-lg text-lg">
+                    Free From
+                    <img src="./images/free-from-ingredient.png" alt="free-from-ingredient" class="mt-1 mx-auto" style="height: 100px; width: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container 2 -->
+<div class="container mx-auto my-8 p-6 bg-blue-100 rounded-lg shadow-md flex flex-wrap">
+    <!-- Left Bar (Ingredients Table) -->
+    <div class="w-full md:w-1/2 p-4">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ingredient</th>
+
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200 list-image-[url(checkmark.png)] ...">
+                    <!-- Table rows with ingredients -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Right Bar (Directions) -->
+    <div class="w-full md:w-1/2 p-4">
+        <div class="border p-4 rounded-lg">
+            <h2 class="font-bold mb-2">Directions</h2>
+            <!-- Directions listed here -->
+        </div>
+        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Print</button>
+        <div class="mt-4">
+            <textarea class="w-full p-2 border rounded" placeholder="Leave a comment or review"></textarea>
+            <div class="flex mt-2">
+                
+                <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                <span class="text-gray-300"><i class="fas fa-star"></i></span>
+                <span class="text-gray-300"><i class="fas fa-star"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container 3 -->
+<div class="container mx-auto my-8 px-6 py-8 bg-purple-100 rounded-lg shadow-md grid grid-cols-2 gap-4">
+    <div class="col-span-1">
+        <img src="./images/Vegan-Chocolate-Tart-direction.webp" alt="Related Image" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+    <div class="col-span-1">
+        <img src="./images/Vegan-Chocolate-Tart-direction-2.webp" alt="Related Image" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+</div>
+
+
+<!-- Container 4 -->
+<div class="container mx-auto my-8 p-6 bg-red-100 rounded-lg shadow-md flex justify-around">
+
+    <div class="w-1/6 p-2">
+        <h1> Suggested Recipe</h1>
+        <img src="./images/Chocolate Bark.jpg" alt="Suggested Recipe" class="w-full mb-2 rounded-lg">
+        <button class="px-4 py-2 bg-red-500 text-white rounded text-sm">See More</button>
+    </div>
+</div>
+
+</body>
+</html>

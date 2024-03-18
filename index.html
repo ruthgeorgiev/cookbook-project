@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookbook</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="./output.css" rel="stylesheet">
+
+    
+</head>
+<body class="bg-white">
+
+
+    <header>
+        <nav class="main-nav flex bg-amber-50 justify-between items-center bg-opacity-25 ... rounded-full px-8">
+          
+            <ul class="navbar-left text-yellow-700 shadow-sm flex items-center">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Videos</a></li>
+                <li class="search-bar">
+                    <form action="/search" method="GET" class="search-form flex items-center">
+                        <label for="search-input-left" class="search-icon">
+                            🔍
+                        </label>
+                        <input type="text" id="search-input-left" name="q" placeholder="Search..." class="search-input">
+                    </form>
+                </li>
+            </ul>
+    
+            <!-- Centered Logo and Title -->
+            <a href="#" class="logo-link flex justify-center items-center">
+                <img src="./images/logo.png" alt="Pink Grapefruit Culinary Blog" class="logo">
+                <span class="title font-medium ... font-serif">Pink Grapefruit Culinary Blog</span>
+            </a>
+    
+            <!-- Right navbar for Home, About, Recipes, Services -->
+            <ul class="navbar-right text-yellow-700 shadow-sm flex items-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+<!-- Hero Container -->
+    <div href="joinNewsletter" class="hero relative bg-cover bg-center flex items-center justify-start text-white h-screen px-8" style="background-image: url('./images/hero.jpg'); height: 85vh; rounded-full">
+        <div class="main-carousel-gradient-text absolute bottom-0 mb-8 max-w-[50%] min-h-[14rem] text-white p-8 pb-4 pl-[64px] bg-black bg-opacity-10 backdrop-blur-[20px] rounded-lg" style="box-sizing: border-box;">
+            <h1 class="text-3xl font-bold mb-4">Join Our Community</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. psum dolor sit amet consectetur adipisicing elit. Laudantium alias pariatur numquam incidunt ab Laudantium alias pariatur numquam incidunt ab veritatis provident adipisci corporis blanditiis ipsum.</p>
+        </div>
+    </div>
+    
+    
+
+    <div class="w-full mx-auto px-8 mt-8 py-10">
+        <!-- First Container -->
+        <div class="flex justify-between bg-white p-4 shadow-md mb-6 font-sans scroll-pr-96 scroll-ml-9">
+            <div class="space-y-2 bg-white p-4 rounded shadow mr-4 font-medium" style="flex-basis: 20%;">
+                <div class="flex items-center p-2 rounded cursor-pointer font-sans text-yellow-700 font-bold mb-0">
+                    <img src="./images/logo.png" alt="Logo" class="w-6 h-6 mr-2"> <!-- Logo Image -->
+                    <a class="hover:bg-gray-200" href="#latestRecipes">Latest Recipes</a>
+                </div>
+                <div class="flex items-center hover:bg-gray-200 p-2 rounded cursor-pointer font-sans text-yellow-700 font-bold mb-0">
+                    <img src="./images/logo.png" alt="Logo" class="w-6 h-6 mr-2"> <!-- Logo Image -->
+                    <a class="hover:bg-gray-200" href="#getTheApp">Get the App</a>
+                </div>
+                <div class="flex items-center hover:bg-gray-200 p-2 rounded cursor-pointer font-sans text-yellow-700 font-bold mb-0">
+                    <img src="./images/logo.png" alt="Logo" class="w-6 h-6 mr-2"> <!-- Logo Image -->
+                    <a class="hover:bg-gray-200" href="#latestArticles">Latest Articles</a>
+                </div>
+                <div class="flex items-center hover:bg-gray-200 p-2 rounded cursor-pointer font-sans text-yellow-700 font-bold mb-0">
+                    <img src="./images/logo.png" alt="Logo" class="w-6 h-6 mr-2"> <!-- Logo Image -->
+                    <a class="hover:bg-gray-200" href="#joinNewsletter">Join Our Newsletter</a>
+                </div>
+            </div>
+        
+        
+            <div class="grid grid-cols-5 gap-4 flex-grow ">
+                <!-- Recipe Items -->
+                <a href="url-to-recipe-page-1" target="_blank" class="hover:scale-105 transform transition duration-300 flex flex-col">
+                    <img src="./images/pasta.jpg" alt="Pasta" class="h-64 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">2 Quick and Creamy Pasta Recipes</div>
+                </a>
+                <a href="url-to-recipe-page-2" target="_blank" class="hover:scale-105 transform transition duration-300 flex flex-col">
+                    <img src="./images/Chocolate Bark.jpg" alt="Salad" class="h-64 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">Healthy and Easy Chocolate Bark</div>
+                </a>
+                <a href="recipe-detail.html" class="hover:scale-105 transform transition duration-300 flex flex-col">
+                    <img src="./images/ganache.jpg" alt="Soup" class="h-64 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">Vegan Chocolate Ganache Tart</div>
+                </a>
+                <a href="url-to-recipe-page-4" target="_blank" class="hover:scale-105 transform transition duration-300 flex flex-col">
+                    <img src="./images/red velvet.jpg" alt="Dessert" class="h-64 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">Red Velvet Cupcakes</div>
+                </a>
+                <a href="url-to-recipe-page-5" target="_blank" class="hover:scale-105 transform transition duration-300 flex flex-col">
+                    <img src="./images/oat.jpg" alt="New Dish" class="h-64 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">Vegan Baked Oats Recipes</div>
+                </a>
+                
+                <!-- Centered and Smaller Button -->
+                <div class="col-start-3 col-span-1 flex justify-center mt-4 mt-4 ml-[-130px]">
+                    <button type="submit" class="text-white px-2 py-1 bg-orange-700 rounded hover:bg-purple-700 transition-colors shadow-xl">
+                        See More Recipes
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Second Container -->
+        <div id="getTheApp" class="flex flex-col md:flex-row justify-between bg-green-50 p-4 shadow-md mb-6 p-8 scroll-pr-96 scroll-ml-9">
+            <div class="flex-1 space-y-4 mb-8 px-7 ">
+                <h3 class="text-2xl text-orange-500 font-bold mb-4 ">Get the App</h3>
+                <img src="./images/mobile-app.png" alt="mobile-app-download" class="w-3/4 md:w-1/2 max-w-sm mx-auto mb-2"> <!-- Adjusted for a smaller maximum width -->
+                <p class="mb-4">Download our cookbook app to access exclusive recipes, tips, and guides to improve your culinary skills. Available on Google Play and the Apple App Store.</p>
+                <div class="flex items-start gap-4 justify-start">
+                    <button class="text-white p-0 rounded hover:bg-amber-600 transition-colors flex justify-start">
+                        <img src="./images/app-store.png" alt="apple-store"> 
+                    </button>
+                    <button class="text-white p-0 rounded hover:bg-amber-600 transition-colors flex justify-start">
+                        <img src="./images/google-play-badge.png" alt="google-play-badge" class="w-32"> 
+                    </button>
+                </div>
+            </div>
+            
+            <div class="flex-1 mb-8 ml-4">
+                <h3 class="text-xl text-orange-500 font-bold mb-4">We Are Pink Grapefruit</h3>
+                <p class="text-justify mb-4">Welcome to Pink Grapefruit Culinary Blog, a vibrant online haven where the love for natural, wholesome food and the joy of cooking converge. Here, we believe that the essence of good eating is simplicity, freshness, and flavor. Our blog is dedicated to all culinary enthusiasts, from those taking their first steps in the kitchen to seasoned chefs looking for a spark of inspiration.
+                    At Pink Grapefruit, we're passionate about celebrating the natural beauty of ingredients and the wonderful ways they can come together to create dishes that warm the heart and delight the senses. Our pages are filled with engaging, easy-to-follow recipes, expert cooking tips, and fascinating food stories that encourage our readers to explore the endless possibilities of home cooking.
+                    <br><br>
+                    Beyond recipes, Pink Grapefruit is a place of community and learning. We dive into the importance of sustainable eating, the joy of seasonal produce, and the journey of food from farm to table. Our blog aims to inspire a deeper appreciation for the food we eat and the world around us, fostering a culinary culture that cherishes every bite.
+                    <br><br>
+                    Join us at Pink Grapefruit Culinary Blog for a delicious adventure through the world of food. Here, every recipe is a story, every tip a treasure, and every meal an opportunity to celebrate the natural wonders of the culinary world. Welcome, and let's savor the journey together.</p>
+                <div class="text-center">
+                    <button class="bg-purple-500 text-white p-3 rounded hover:bg-purple-700 transition-colors">Read More</button>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        <!-- Third Container -->
+        <div id="latestArticles" class="bg-white p-8 shadow-md mb-6 font-sans scroll-pr-96 scroll-ml-9">
+            <h1 class="text-3xl font-bold mb-8 text-yellow-700 text-center">Latest Articles</h1>
+            <div class="grid grid-cols-5 gap-6">
+                <!-- Article Boxes -->
+                <a href="url-to-recipe-page-1" target="_blank" class="hover:scale-110 transform transition duration-300 flex flex-col items-center">
+                    <img src="./images/blog-1.png" alt="blog-1" class="h-80 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">Healthy Meal Ideas Blog</div>
+                </a>
+                <a href="url-to-recipe-page-2" target="_blank" class="hover:scale-110 transform transition duration-300 flex flex-col items-center">
+                    <img src="./images/blog-2.png" alt="blog-2" class="h-80 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">The Secret To Make Health Breakfast</div>
+                </a>
+                <a href="url-to-recipe-page-3" target="_blank" class="hover:scale-110 transform transition duration-300 flex flex-col items-center">
+                    <img src="./images/blog-3.png" alt="blog-3" class="h-80 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">Taste of Paris</div>
+                </a>
+                <a href="url-to-recipe-page-4" target="_blank" class="hover:scale-110 transform transition duration-300 flex flex-col items-center">
+                    <img src="./images/blog-4.png" alt="blog-4" class="h-80 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">The Story Behind Cooking Channel</div>
+                </a>
+                <a href="url-to-recipe-page-5" target="_blank" class="hover:scale-110 transform transition duration-300 flex flex-col items-center">
+                    <img src="./images/blog-5.png" alt="blog-5" class="h-80 w-full rounded shadow object-cover">
+                    <div class="text-center mt-2 text-lg leading-tight">The Best Asian Food</div>
+                </a>
+            </div>
+            <!-- See More Articles Button -->
+            <div class="flex justify-center mt-8">
+                <button type="submit" class="text-white px-4 py-2 bg-orange-700 rounded hover:bg-purple-700 transition-colors shadow-xl">
+                    See More Articles
+                </button>
+            </div>
+        </div>
+        
+        
+
+        <!-- Fourth Container -->
+        <div  id="joinNewsletter" class="flex justify-between bg-white p-4 shadow-md mb-6 scroll-pr-96 scroll-ml-9">
+            <div>
+                <h3>Join Our Community</h3>
+            </div>
+            <div>
+                <h3>Stay in the Loop</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Your email" class="p-2 border rounded mr-2">
+                    <button type="submit" class="bg-purple-500 text-white p-2 rounded hover:bg-purple-700 transition-colors">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="flex justify-between items-center bg-amber-50  text-white p-4 shadow-md scroll-pr-96 scroll-ml-9">
+            <div class="flex space-x-4 text-yellow-700">
+                <a href="#" class="hover:text-amber-600">Facebook</a>
+                <a href="#" class="hover:text-amber-600">Twitter</a>
+                <a href="#" class="hover:text-amber-600">Instagram</a>
+            </div>
+            <div>
+                <img src="./images/logo.png" alt="Logo" class="h-8 text-yellow-700 inline mr-2 ">
+                <span class="text-yellow-700">Pink Grapefruit Culinary Blog</span>
+            </div>
+            <div class="space-x-4 text-yellow-700">
+                <a href="#" class="hover:text-amber-600">About</a>
+                <a href="#" class="hover:text-amber-600">Privacy</a>
+                <a href="#" class="hover:text-amber-600">Support</a>
+                <a href="#" class="hover:text-amber-600">Terms</a>
+            </div>
+        </footer>
+    </div>  
+
+
+    
+    
+        
+    
+     
+</body>
+</html>

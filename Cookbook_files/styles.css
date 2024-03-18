@@ -1,0 +1,181 @@
+/* header */
+
+header {
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    position: fixed; /* Fixes navbar to the top */
+    z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+form{
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+#search-input {
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease;
+}
+
+/* Additional styles for search bar */
+.search-form .search-input {
+    display: none; /* Hide search input by default */
+    margin-top: 10px; /* Adjust top margin as needed */
+    border: 2px solid #b8b8b8;
+    border-radius: 4px;
+}
+
+.search-form:hover .search-input,
+.search-input:focus {
+    display: inline-block; /* Show input on hover/focus */
+}
+
+
+
+.logo-link {
+   
+    text-decoration: none;
+    padding: 0 20px;
+    color: rgb(228, 179, 88)
+}
+
+
+
+
+.logo {
+    height: 50px; 
+    margin-right: 10px;
+}
+
+.main-nav {
+    
+    align-items: center;
+    height: 60px;
+    position: fixed; /* Fix navbar to the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure navbar extends full width */
+    background-color: rgba(255, 235, 205, 0.25); /* Example background color with opacity */
+    z-index: 1000; /* Ensure navbar is above other content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+    }
+    
+    /* Additional padding to the body or main content container */
+    body {
+        padding-top: 50px; /* Adjust according to the height of your navbar */
+    }
+    ;
+
+   
+
+
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 20px;
+    color: rgb(228, 179, 88);
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.main-nav li a:hover, .main-nav li a:focus {
+   background-color: #fee6d0;
+}
+
+/* body */
+
+body {
+    padding-top: 70px;
+}
+.border {
+    border-radius: 10px;
+}
+
+body {
+    padding-top: 60px; /* Add padding to avoid content being hidden behind the fixed navbar */
+    margin: 0; /* Reset default margin */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-direction: row;
+}
+
+
+.recipe-list ul {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.recipe-list li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+
+
+.recipe-details {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.recipe-details h2 {
+   
+}
+
+.recipe-details figure {
+    margin: 20px 0;
+}
+
+.recipe-details img {
+    width: 60%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #f1e0d1;
+}
+
+th {
+    background-color: #f1e0d1;
+}
