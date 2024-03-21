@@ -129,24 +129,34 @@
     </div>
    
     <!-- Right Bar (Directions) -->
-<div class="w-full md:w-1/2 p-4">
-    <div class="border p-4 rounded-lg shadow-lg">
-        <h2 class="font-bold text-lg mb-4 text-amber-700">Directions</h2>
-        <ol class="list-decimal list-inside space-y-2">
-            <li>Add 290 grams all-purpose gluten-free flour into a bowl, 160 grams of almond meal, 3 tbsp of coconut sugar, 1/2 tsp of salt, and 1/4 tsp of vanilla then whisk to combine.</li>
-            <li>Add cold pieces of vegan butter, using 200 grams of butter. Knead with your hands until the mixture sticks together. Spray the tart pan with olive oil or line with parchment paper to prevent sticking.</li>
-            <li>Spread the crust mixture into a tart pan (30 cm round pan), press the mixture to the tart pan using your fingers, ensuring it's even everywhere.</li>
-            <li>Place a piece of parchment paper on top of the prepared crust and fill with pie weights, rice, or chickpeas to prevent slumping or puffing. Bake for 12-15 minutes at 180 degrees Celsius.</li>
-            <li>For the chocolate filling, heat 3.5 cups of full-fat coconut milk until simmering.</li>
-            <li>Pour into a bowl with 4.5 cups of dark chocolate chips, wait 30 seconds then stir slowly until completely melted and smooth.</li>
-            <li>Add 1/4 tsp of salt and vanilla, stirring until well combined.</li>
-            <li>Remove the pie weights and bake the crust for another 5-10 minutes or until golden brown, dry, and firm. Then, allow to cool for about 10 minutes.</li>
-            <li>Pour the chocolate filling into the crust, smoothing the top with a spoon or spatula.</li>
-            <li>Refrigerate for at least 4 hours or overnight to set completely. Then, remove from the tart pan and garnish with figs, berries, or pistachios.</li>
-        </ol>
+    <div class="w-full md:w-1/2 p-4">
+        <div class="border p-4 rounded-lg shadow-lg">
+            <h2 class="font-bold text-lg mb-4 text-amber-700">
+                Directions
+            </h2>
+                <ol class="list-decimal list-inside space-y-2">
+                    <li>Add 290 grams all-purpose gluten-free flour into a bowl, 160 grams of almond meal, 3 tbsp of coconut sugar, 1/2 tsp of salt, and 1/4 tsp of vanilla then whisk to combine.</li>
+                    <li>Add cold pieces of vegan butter, using 200 grams of butter. Knead with your hands until the mixture sticks together. Spray the tart pan with olive oil or line with parchment paper to prevent sticking.</li>
+                    <li>Spread the crust mixture into a tart pan (30 cm round pan), press the mixture to the tart pan using your fingers, ensuring it's even everywhere.</li>
+                     <li>Place a piece of parchment paper on top of the prepared crust and fill with pie weights, rice, or chickpeas to prevent slumping or puffing. Bake for 12-15 minutes at 180 degrees Celsius.</li>
+                     <li>For the chocolate filling, heat 3.5 cups of full-fat coconut milk until simmering.</li>
+                     <li>Pour into a bowl with 4.5 cups of dark chocolate chips, wait 30 seconds then stir slowly until completely melted and smooth.</li>
+                     <li>Add 1/4 tsp of salt and vanilla, stirring until well combined.</li>
+                     <li>Remove the pie weights and bake the crust for another 5-10 minutes or until golden brown, dry, and firm. Then, allow to cool for about 10 minutes.</li>
+                     <li>Pour the chocolate filling into the crust, smoothing the top with a spoon or spatula.</li>
+                     <li>Refrigerate for at least 4 hours or overnight to set completely. Then, remove from the tart pan and garnish with figs, berries, or pistachios.</li>
+                 </ol>
+         </div>
+    <div class="flex space-x-2 mt-4">
+        <button class="px-4 py-2 bg-blue-800 text-white font-semibold rounded hover:bg-blue-700 transition-colors duration-200 ease-in-out">Print</button>
+        <button id="shareBtn" class="px-4 py-2 bg-green-500 text-white font-semibold rounded hover:bg-green-600 transition-colors duration-200 ease-in-out">Share</button>
     </div>
-    <button class="mt-4 px-4 py-2 bg-blue-800 text-white font-semibold rounded hover:bg-blue-700 transition-colors duration-200 ease-in-out">Print</button>
-    <div class="mt-4">
+    <script>
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            alert(`Share this URL: ${window.location.href}`);
+        });
+    </script>
+      <div class="mt-4">
         <h3 class="text-lg font-semibold text-center mb-2">Rate this Recipe</h3>
         <div class="flex justify-center mb-4 bg-amber-600">
             <ul class="flex" id="star-rating">
@@ -179,6 +189,11 @@
             }
         });
     </script>
+</div>
+
+
+   
+  
         
 </div>
 
