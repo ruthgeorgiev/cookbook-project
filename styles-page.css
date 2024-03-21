@@ -1,0 +1,54 @@
+/* header */
+
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+form{
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+#search-input {
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease;
+}
+
+/* Additional styles for search bar */
+.search-form .search-input {
+    display: none; /* Hide search input by default */
+    margin-top: 10px; /* Adjust top margin as needed */
+    border: 2px solid #b8b8b8;
+    border-radius: 4px;
+}
+
+.search-form:hover .search-input,
+.search-input:focus {
+    display: inline-block; /* Show input on hover/focus */
+}
+
+.logo-link {
+   
+    text-decoration: none;
+    padding: 0 20px;
+    color: rgb(228, 179, 88)
+}
+
+.logo {
+    height: 50px; 
+    margin-right: 10px;
+}
